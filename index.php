@@ -323,13 +323,29 @@
 									<h1>Book a Trip</h1>
 								</div>
 							</div>
-					  		<form class="booking-form" id="booking" action="booking.php">
+													
+							<?php
+								if(isset($_POST)){
+									$name=$_POST['name'];
+									$email=$_POST['email'];
+									$subject="Booking request";
+									$msg=$name.' '.$email;
+									mail("yewande.odumosu@gmail.com","<?=$subject?>",$msg);
+
+								echo "booking recived";
+								}
+								else{									
+							?>
+													
+													
+													
+					  		<form name="bookingform" class="booking-form" id="booking" action="index.php" method="post">
 								 <div class="row">
 								    <div class="col-lg-6 col-md-12">
 								    	<div class="row">
 									    	<div class="col-lg-6">
 												<input type="text" name="fname" class="single-in form-control" placeholder="Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Name'" required="">
-												<input type="text" name="fname" class="single-in form-control" placeholder="Departure City" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Departure City'" required="">
+												<input type="text" name="depature" class="single-in form-control" placeholder="Departure City" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Departure City'" required="">
 												<input id="datepicker" name="arrival" class="single-in form-control"  onblur="this.placeholder = 'Date of Departure'" type="text" placeholder="Date of Departure" required>
 												<select name="room-type" class="app-select form-control" required>
 													<option data-display="Choose a Class">Choose a Class</option>
@@ -345,8 +361,8 @@
 												</select>
 									    	</div>
 									    	<div class="col-lg-6">
-									    		<input type="text" name="lname" class="single-in form-control" placeholder="Phone Number" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Phone Number'" required="">
-									    		<input type="text" name="fname" class="single-in form-control" placeholder="Arrival City" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Arrival City'" required="">
+									    		<input type="text" name="phoneno" class="single-in form-control" placeholder="Phone Number" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Phone Number'" required="">
+									    		<input type="text" name="arrival" class="single-in form-control" placeholder="Arrival City" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Arrival City'" required="">
 									    		<input id="datepicker2" name="departure" class="single-in form-control"  onblur="this.placeholder = 'Date of Arrival'" type="text" placeholder="Date of Arrival" required>
 									    		<select name="no-room" class="app-select form-control" required>
 													<option data-display="One Way/ Return">One Way/ Return Trip</option>
@@ -364,7 +380,7 @@
 								    	</div>
 								    </div>
 								    	<div class="col-lg-6">
-												<input type="text" name="fname" class="single-in form-control" placeholder="Email Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Emial Address'" required="">
+												<input type="text" name="email" class="single-in form-control" placeholder="Email Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Emial Address'" required="">
 												<select name="room-type" class="app-select form-control" required>
 													<option data-display="Include a Hotel?">Include an Hotel?</option>
 													<option value="1">Yes</option>
@@ -389,6 +405,7 @@
 									<div class="alert-msg"></div>
 								  </div>
 					  		</form>
+<?php } ?>
 						</div>
 					</div>
 				</div>
