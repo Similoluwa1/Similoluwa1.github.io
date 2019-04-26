@@ -399,7 +399,8 @@
 									    	</div>
 
 										<div class="col-lg-12 d-flex justify-content-center send-btn">
-										<button class="primary-btn mt-20 text-uppercase ">Book a Trip<span class="lnr lnr-arrow-right"></span></button>
+																	     <input type="submit" value="Book a Trip">
+										<!--<button class="primary-btn mt-20 text-uppercase ">Book a Trip<span class="lnr lnr-arrow-right"></span></button>-->
 									</div>
 
 									<div class="alert-msg"></div>
