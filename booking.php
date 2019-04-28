@@ -1,22 +1,22 @@
 <?php
     $to = 'simi.adelore@gmail.com';
-    $from = $_POST["fname"];
-    $text= $_POST["email address"];
-    $text= $_POST["phone number"];
-    $text= $_POST["departure city"];
-    $text= $_POST["arrival city"];
-    $text= $_POST["date of depature"];
-    $text= $_POST["date of arrival"];
-    $text= $_POST["one way/ return"];
-    $text= $_POST["Include a Hotel?"];
-    $text= $_POST["rooms"];
-    $text= $_POST["adults"];
-    $text= $_POST["children"];
+    $fname = $_POST["fname"];
+    $email address= $_POST["email address"];
+    $phone number= $_POST["phone number"];
+    $departure city= $_POST["departure city"];
+    $arrival city= $_POST["arrival city"];
+    $date of depature= $_POST["date of depature"];
+    $date of arrival= $_POST["date of arrival"];
+    $one way/ return= $_POST["one way/ return"];
+    $include a hotel= $_POST["include a hotel?"];
+    $rooms= $_POST["rooms"];
+    $adults= $_POST["adults"];
+    $children= $_POST["children"];
     
 
 
     $headers = 'MIME-Version: 1.0' . "\r\n";
-    $headers .= "From: " . $fname . "\r\n"; // Sender's E-mail
+    $headers .= "From: " . $email address . "\r\n"; // Sender's E-mail
     $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
 
     $message ='<table style="width:100%">
