@@ -1,14 +1,17 @@
 <?php
-    $to = 'demo@spondonit.com';
+    $to = 'simi.adelore@gmail.com';
     $from = $_POST["fname"];
-    $to= $_POST["lname"];
-    $text= $_POST["start"];
-    $text= $_POST["arrival"];
-    $text= $_POST["departure"];
-    $text= $_POST["room-type"];
-    $text= $_POST["no-room"];
+    $text= $_POST["email address"];
+    $text= $_POST["phone number"];
+    $text= $_POST["departure city"];
+    $text= $_POST["arrival city"];
+    $text= $_POST["date of depature"];
+    $text= $_POST["date of arrival"];
+    $text= $_POST["one way/ return"];
+    $text= $_POST["Include a Hotel?"];
+    $text= $_POST["rooms"];
     $text= $_POST["adults"];
-    $text= $_POST["child"];
+    $text= $_POST["children"];
     
 
 
@@ -18,15 +21,19 @@
 
     $message ='<table style="width:100%">
         <tr>
-            <td>'.$fname.'  '.$lname.'</td>
+            <td>'.$fname.'</td>
         </tr>
-        <tr><td>Start: '.$start.'</td></tr>
-        <tr><td>Arrival: '.$arrival.'</td></tr>
-        <tr><td>Departure: '.$departure.'</td></tr>
-        <tr><td>Room-type: '.$room-type.'</td></tr>
-        <tr><td>Room-no: '.$no-room.'</td></tr>
+        <tr><td>Email Address: '.$email address.'</td></tr>
+        <tr><td>Phone Number: '.$phone number.'</td></tr>
+        <tr><td>Departure City: '.$departure city.'</td></tr>
+        <tr><td>Arrival City: '.$arrival city.'</td></tr>
+        <tr><td>Date of Depature: '.$date of depature.'</td></tr>
+        <tr><td>Date of Arrival: '.$date of arrival.'</td></tr>
+        <tr><td>One way/ Return: '.$one way/ return.'</td></tr>
+        <tr><td>Include a Hotel: '.$include a hotel.'</td></tr>
+        <tr><td>Rooms: '.$rooms.'</td></tr>
         <tr><td>Adults: '.$adults.'</td></tr>
-        <tr><td>Child: '.$child.'</td></tr>
+        <tr><td>Children: '.$children.'</td></tr>
         
     </table>';
 
